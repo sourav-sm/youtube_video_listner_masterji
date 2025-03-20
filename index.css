@@ -26,8 +26,9 @@ body {
   }
 
   .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
   }
@@ -39,6 +40,8 @@ body {
     overflow: hidden;
     transition: transform 0.2s;
     cursor: pointer;
+    width: 280px;
+    max-width: 100%;
   }
 
   .video-card:hover {
